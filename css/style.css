@@ -60,9 +60,36 @@ div{
   color:white;
 }
 .intro{
-text-align:center;
-border: 1px solid black;
+  text-align:center;
+  margin-bottom:-20px;
 }
+h3{
+  text-align:center;
+  background-color:rgb(202, 202, 202);
+  margin-bottom:0px;
+}
+.upplevelser{
+  display:flex;
+  gap:30px;
+  background-color:rgb(202, 202, 202);
+}
+.box{
+  background-color:rgb(202, 202, 202);
+  margin-left:18px;
+}
+.box img{
+  width:20rem;
+  height:15rem;
+  display:block;
+  border-radius:10px;
+  margin-left:25px;
+  margin-top:10px;
+}
+.box h4, p{
+  text-align:center;
+}
+
+
 @media screen and (max-width:767px){
   header{
     background-color: rgb(29, 137, 210); 
