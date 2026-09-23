@@ -36,8 +36,11 @@ ul li a{
 }
 img{
   height:30rem;
-  width:79rem;
+  width:78rem;
   background-position:left;
+}
+div{
+  margin-bottom:-4px;
 }
 .hero-text{
   text-align:left;
@@ -55,6 +58,10 @@ img{
 .hero-text button:hover{
   background-color:rgb(56, 130, 67);
   color:white;
+}
+.intro{
+text-align:center;
+border: 1px solid black;
 }
 @media screen and (max-width:767px){
   header{
