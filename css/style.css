@@ -1,6 +1,8 @@
 header{
-  background-color:rgb(167, 214, 91);
   color:white;
+  padding-left:20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border:1px solid black;
 }
 img{
   height:2rem;
@@ -14,7 +16,7 @@ ul{
   margin:0;
   padding:0;
   overflow:hidden;
-  background-color:rgb(167, 214, 91);
+  
 }
 ul li{
   float:left;
@@ -23,21 +25,21 @@ ul li{
 ul li a{
   display:block;
   color:white;
-  text-align:left;
+  text-align:right;
   padding:14px;
   text-decoration:none;
 }
 @media screen and (max-width:767px){
-  body{
-    background-color: purple;
+  header{
+    background-color: rgb(34, 165, 111);
+  }
+  nav ul{
+    flex-direction:column;
   }
 }
 @media screen and (min-width:768px){
-  body{
-    background-color: orange;
-  }
-  nav ul{
-    flex-direction: row;
+  header{
+    background-color: rgb(167, 214, 91);
   }
 }
 
