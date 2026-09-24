@@ -1,8 +1,16 @@
+body{
+  margin:0;
+  color:black;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+img{
+  max-width:100%;
+}
+/*header*/
 header{
   color:white;
-  padding-left:20px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  border:1px solid black;
+  padding:5px 20px;
+  background-color:rgb(167, 214, 91);
 }
 nav{
   display:flex;
@@ -13,12 +21,9 @@ nav{
 nav ul{
   display: flex;
   gap:30px;
-}
-ul{
   list-style-type:none;
-  margin:0;
 }
-ul li a{
+nav ul li a{
   color:white;
   padding:14px;
   text-decoration:none;
@@ -34,20 +39,20 @@ ul li a{
   padding-top:2px;
   padding-left:10px;
 }
-img{
-  height:30rem;
-  width:78rem;
-  background-position:left;
-}
-div{
-  margin-bottom:-4px;
+/*hero*/
+.hero{
+  position:relative;
+  width:100%;
 }
 .hero-text{
-  text-align:left;
   position:absolute;
-  top:57%;
-  right:65%;
+  top:50%;
+  left:8%;
   color:white;
+  max-width:500px;
+}
+.hero-text p{
+  text-align:left;
 }
 .hero-text button{
   padding:10px 25px;
@@ -59,82 +64,95 @@ div{
   background-color:rgb(56, 130, 67);
   color:white;
 }
+/*intro*/
 .intro{
   text-align:center;
-  margin-bottom:-20px;
+  padding:10px 20px;
 }
-h3{
+.intro h2{
+  margin-bottom:20px;
+}
+.intro p{
+  max-width:800px;
+  margin:15px auto;
+}
+/*aktiviteter*/
+.aktivitet{
   text-align:center;
   background-color:rgb(202, 202, 202);
-  margin-bottom:0px;
 }
 .upplevelser{
   display:flex;
-  gap:30px;
   background-color:rgb(202, 202, 202);
+  gap:30px;
+  justify-content: center;
+  padding:20px 30px 40px;
+}
+.upplevelser-section{
+  background-color:rgb(202, 202, 202);
+}
+.upplevelser-section h3{
+  text-align:center;
+  margin:0;
+  padding:25px;
 }
 .box{
-  background-color:rgb(202, 202, 202);
-  margin-left:18px;
+  max-width:350px;
+  flex:1;
 }
 .box img{
-  width:20rem;
-  height:15rem;
   display:block;
+  width:100%;
+  height:15rem;
   border-radius:10px;
-  margin-left:25px;
-  margin-top:10px;
 }
-.box h4, p{
+.box h4{
+  text-align:center;
+  margin-bottom:10px;
+}
+.box p{
   text-align:center;
 }
+/*avslut*/
 .avslut{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:10px;
+  padding:50px 10%;
 }
 .avslut-text{
-  margin-left:20px;
-}
-.avslut h2{
-  margin-left:150px;
+  max-width:650px;
 }
 .avslut button{
   background-color:rgb(167, 214, 91);
   color:black;
   padding:10px 25px;
   border-radius:5px;
-  margin-right:15rem;
-  margin-top:10px;
 }
 .avslut button:hover{
   background-color:rgb(56, 130, 67);
   color:white;
 }
+/*footer*/
 footer{
   display:flex;
   align-items:center;
   justify-content: space-evenly;
-  padding:20px;
   background-color:darkgray;
+  padding:40px 20px;
 }
 footer h4{
   margin-top:0;
-  justify-content: space-between;
 }
 footer p{
   margin:5px;
-  justify-content:space-between;
   text-align:left;
 }
 .footer-logo img{
   width:50px;
   height:50px;
-  margin-left:-7rem;
 }
 .footer-info{
-  margin-left:-5rem;
   margin-top:-2rem;
 }
 .footer-kontakt{
@@ -147,37 +165,101 @@ footer p{
 @media screen and (max-width:767px){
   header{
     background-color: rgb(29, 137, 210); 
-    border: 1px solid black;
+  }
+  .logo{
+    justify-content:center;
   }
   nav{
     flex-direction:column;
-    gap:20px;
+    gap:15px;
   }
   nav ul{
     flex-direction:column;
-    gap:15px;
+    align-items:center;
+    gap:10px;
+    width:100%;
     padding-right:80px;
+  }
+  nav ul li{
+    width:100%;
+    text-align:center;
+  }
+  .hero{
+    width:100%;
+  }
+  .hero-text{
+    position:static;
+    width:100%;
+    max-width:100%;
+    padding:40px 10px;
+    background-color:rgb(204, 204, 204);
+    color:black;
+    text-align:center;
+  }
+  .hero-text p{
+    text-align:center;
   }
   .hero-text button{
     background-color:rgb(29, 137, 210);
+    color:black;
+    padding:10px 25px;
+    border-radius:5px;
   }
   .hero-text button:hover{
     background-color:rgb(8, 72, 115);
+    color:white;
+  }
+  .intro{
+    padding:30px 20px;
+  }
+  .intro p{
+    text-align:center;
+  }
+  .upplevelser{
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+    gap:30px;
+  }
+  .box{
+    width:100%;
+    max-width:400px;
+  }
+  .box img{
+    width:100%;
+    height:auto;
   }
   .avslut{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
     gap:20px;
+  }
+  .avslut-text{
+    margin:0;
+  }
+  .avslut-text p{
+    text-align:center;
   }
   .avslut button{
     background-color:rgb(29, 137, 210);
+    margin:0;
+    color:white;
   }
   .avslut button:hover{
     background-color:rgb(8, 72, 115);
   }
-}
-@media screen and (min-width:768px){
-  header{
-    background-color: rgb(167, 214, 91);
+  footer{
+    flex-direction:row;
+    gap:25px;
+    text-align:center;
+    padding:40px 20px;
+  }
+  footer p{
+    text-align:center;
+  }
+  .footer-info{
+    margin:0;
   }
 }
